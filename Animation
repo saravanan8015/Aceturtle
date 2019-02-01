@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Puja Articles</title>
+<style>
+.btn
+{
+padding:10px;
+border-radius:12px;
+position:relative;
+background-color:#00A0D6;
+}
+.top
+{
+top:0;
+}
+.btn:hover .top
+{
+top:-50px;
+}
+.bottom
+{
+top:50px;
+}
+.btn:hover .bottom
+{
+top:0px;
+}
+.content
+{
+
+position:relative;
+transition:top 0.9s;
+}
+.btn:hover
+{
+color:red;
+background-color:lightgreen;
+}
+.div_1
+{
+border:2px solid red;
+padding:10px;
+background-color:yellow;
+}
+</style>
+</head>
+<body>
+<form action="a.html">
+<h1 align="center">Puja Articles </h1>
+<div class="div_1">
+Puja plate is a tray or a big container in which the entire puja materials accumulated and decorated.[1] In Hindu religious occasions, festivals, traditions and rituals, puja thali maintains an auspicious role. Puja thali may be made of steel, gold, silver, brass or any other metal; it may be rounded, oval or any other shaped or with little engravings and designs as much as decoration needed. Puja thali may be costly or cheaper but puja accessories are more or less same. </div>
+<br><br><br>
+<section>
+<a href="a.html" class='btn'>
+<span class="top content">Buy Now</span>
+<span class="bottom content">Rs.100</span>
+</a>
+</section>
+</form>
+</body>
+</html>
