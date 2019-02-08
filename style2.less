@@ -1,0 +1,54 @@
+@width:5.0px;
+@height:10px;
+@base:#f04615;
+@fontSize: 20px;
+.myclass
+{
+    width:percentage(@width);
+	height:@height;
+}	
+.palign
+{
+text-align:center;
+}
+.p1
+{
+.palign();
+font-size:@fontSize;
+}
+.p2
+{
+.p1();
+}
+.b1
+{
+padding:40px;
+width:40%;
+color:saturate(@base,5%);
+background-color:spin(lighten(@base,25%),8);
+.p1();
+}
+.container {
+  position: relative;
+  text-align: center;
+  font-size:30px;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button1 {
+  background-color: lightgray;
+  border-radius:50%;
+  color:black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
