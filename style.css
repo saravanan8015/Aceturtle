@@ -14,8 +14,42 @@
 .p1
 {
 	font-size:30px;
+	font-family: 'Raleway',sans-serif;
 }
 .ban1
 {
 	border:1px solid #f1f1f1;
+}
+.item{
+  width:200px;
+  text-align:center;
+  display:flex;
+  background-color: transparent;
+  border: 1px solid transparent;
+  justify-content:space-between;
+}
+
+#index-gallery{
+	display:flex;
+	flex-basis:40%;
+	justify-content:space-between;
+    padding:10px;
+   box-shadow:none;
+   font-family: 'Raleway',sans-serif;
+   flex-direction:row;
+  padding:50px;
+   font-size: 20px;
+}
+.news
+{
+	text-decoration:none;
+	color:black;
+}
+
+.footer {
+	padding:20px;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: left;
 }
