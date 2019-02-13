@@ -82,6 +82,17 @@ border-radius: 21px;
 padding-bottom: 7px;
 padding-top: 7px;
 }
+.but1:hover
+{
+	color:white;
+background-color: orangered !important;
+margin-left: 0px;
+border: 2px solid orangered!important;
+border-radius: 21px;
+padding-bottom: 7px;
+padding-top: 7px;
+}
+	
 .p2
 {
 	color: #5b5b5b;
@@ -112,6 +123,21 @@ color: #090909 !important;
 width: 314px;
 text-align: center;
 border-radius: 38px;
+}
+.but2:hover
+{
+	height: 58px;
+line-height: 58px;
+font-size: 20px;
+padding: 0 22px;
+background-color: orangered !important;
+border: 2px solid orangered !important;
+color: white !important;
+width: 314px;
+text-align: center;
+border-radius: 38px;
+	background-color:orange;
+	font-weight:bold;
 }
 .p3
 {
@@ -154,10 +180,20 @@ margin:20px 90px 20px 90px;
 	color: #ff3d00;
 font-family: Raleway,sans-serif;
 font-size:15px;
+padding:30px;
 }
 .foo1
 {
-	color: #5b5b5b !important;
+	color: #5b5b5b!important;
+	font-size: 18px;
+}
+li:first-child
+{
+	color:white;
+}
+.foo2
+{
+	color:white;
 }
 .qode-icon-element {
     color: #ff3d00;
@@ -187,6 +223,31 @@ ul {
     height: 45px;
     line-height: 45px;
 	color:orange;
-	font-size:20px;
+	font-size:22px;
     width: 45px;
+	
+}
+.cbut
+{
+	background-color: rgba(0, 0, 0, 0.1);
+	width:12%;
+	color: white;
+border: 3px solid white !important;
+border-radius: 21px;
+  margin-top: -7px;
+font-weight:bold;
+padding-bottom: 7px;
+padding-top: 7px;
+}
+.cbut:hover
+{
+	background-color: orange;
+	width:12%;
+	color: white;
+margin-top:-7px;
+border: 3px solid orange !important;
+border-radius: 21px;
+font-weight:bold;
+padding-bottom: 7px;
+padding-top: 7px;
 }
