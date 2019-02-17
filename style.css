@@ -1,16 +1,71 @@
-
-.button1 {
-
-  border-radius: 50%;
-  color: black;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+/* body alignment */
+body
+{
+margin:0;
 }
+/* navigation bar */
+.nav
+{
+    top:0;
+   padding:25px;
+   display:flex;
+   justify-content:flex-end;
+   background-color: rgba(0, 0, 0, 0.1);
+   position:fixed;
+   width:95%;
+   margin-left:0 !important;
+   font-family: 'Raleway',sans-serif;
+}
+/* anchor tag in nav bar */
+.nav-link
+{
+
+text-decoration:none;
+color:white;
+margin: 0 20px;
+font-weight:bold;
+text-transform: uppercase;
+font-size: 13px;
+letter-spacing: 1px;
+}
+/* content 1 alignments */
+.row_1
+{
+display:flex;
+flex-basis:30%;
+flex-direction:row;
+justify-content:space-between;
+font-family: 'Raleway',sans-serif;
+margin:20px 50px 60px 50px;
+}
+/* content 1 */
+.div
+{
+background-color:lightgray;
+padding:70px;
+}
+/* logo img fitness */
+.logo_img {
+display:block;
+    position: absolute !important;
+    left: 0 !important;
+	top:0;
+	width: auto !important;
+    max-width: none;
+	height:95%;
+	margin:0 0 30px 40px;
+}
+/*phone icon in nav bar */
+.nav .icon
+{
+display:none;
+}
+/* Not displaying */
+.alt
+{
+	display:none;
+}
+/* Content 1 header alignment */
 .p1
 {
 	font-family: 'Raleway',sans-serif;
@@ -23,6 +78,7 @@ letter-spacing: .8px;
 text-transform: uppercase;
 	
 }
+/* content 2 image series */
 .ban1
 {
 	border:1px solid #f1f1f1;
@@ -31,6 +87,7 @@ padding:10px;
 box-shadow:none;
 
 }
+
 .item{
   width:200px;
   text-align:center;
@@ -40,6 +97,7 @@ box-shadow:none;
   justify-content:space-between;
 }
 
+/* content 4 display box */
 #index-gallery{
 margin: 20px 120px 60px 120px;
 	text-align:left;
@@ -56,6 +114,7 @@ margin: 20px 120px 60px 120px;
 padding:10px;
 box-shadow:none;
 }
+/* anchor tag in content4 */
 .news
 {
 	text-decoration:none;
@@ -64,7 +123,7 @@ box-shadow:none;
 	font-family: 'Raleway',sans-serif;
 	text-overflow: ellipsis;
 }
-
+ /* footer class for footer divison arrangements */
 .footer {
 	padding:20px;
    width: 100%;
@@ -72,6 +131,7 @@ box-shadow:none;
    color: white;
    text-align: left;
 }
+/* button decoration for content 1 & 4*/
 .but1
 {
 	color: #000;
@@ -82,6 +142,7 @@ border-radius: 21px;
 padding-bottom: 7px;
 padding-top: 7px;
 }
+/* button hover for content 1 & 4 */
 .but1:hover
 {
 	color:white;
@@ -92,7 +153,7 @@ border-radius: 21px;
 padding-bottom: 7px;
 padding-top: 7px;
 }
-	
+	/*p2" class text arrangements in body content */
 .p2
 {
 	color: #5b5b5b;
@@ -102,6 +163,7 @@ line-height: 26px;
 font-style: normal;
 font-weight: 400;
 }
+/* for content 1 body headLine */
 h5
 {
 	color: #515151;
@@ -111,6 +173,7 @@ font-style: normal;
 font-weight: bold;
 text-transform: uppercase;
 }
+/* button in content 3 */
 .but2
 {
 height: 58px;
@@ -124,6 +187,7 @@ width: 314px;
 text-align: center;
 border-radius: 38px;
 }
+/*button hover in content 3 */
 .but2:hover
 {
 	height: 58px;
@@ -139,6 +203,7 @@ border-radius: 38px;
 	background-color:orange;
 	font-weight:bold;
 }
+/* "p3" for alignments "p" tag contains images, a tag and one button in content 4 */
 .p3
 {
 flex-wrap:wrap;
@@ -151,6 +216,7 @@ font-weight: 400;
 padding: 26px 0 0;
 text-align:left;
 }
+/* row_2 class for display flex in content 2 */
 .row_2
 {
 display:flex;
@@ -160,10 +226,12 @@ justify-content:space-between;
 font-family: 'Raleway',sans-serif;
 margin:20px 90px 20px 90px;
 }
+/* after content3 displaying button background */
 .viddown
 {
 	background-color:lightgray;
 }
+/*  "mainfoot" class for whole footer alignments */
 .mainfoot
 {
 	text-align:left;
@@ -175,6 +243,7 @@ margin:20px 90px 20px 90px;
    flex-direction:row;
    font-size: 20px;
 }
+/* "footer class for footer divison arrangements*/
 .footer
 {
 	color: #ff3d00;
@@ -182,25 +251,31 @@ font-family: Raleway,sans-serif;
 font-size:15px;
 padding:30px;
 }
+/* "foo1" class for arrangements of unordered list */
 .foo1
 {
 	color: #5b5b5b!important;
 	font-size: 18px;
 }
+/*just it changes the color */
 li:first-child
 {
 	color:white;
 }
+/* foo2 class for changes color in footer list */
 .foo2
 {
 	color:white;
 }
+/* footer icon elements */
 .qode-icon-element {
     color: #ff3d00;
 }
+/* displaying list without bullets */
 ul {
   list-style-type: none;
 }
+/*final line of webpage */
 .textwidget
 {
 	padding:10px;
@@ -209,6 +284,7 @@ ul {
 	text-align:center;
 	font-size:12px;
 }	
+/* navigation bar contains one button */
 .cbut
 {
 	background-color: rgba(0, 0, 0, 0.1);
@@ -221,6 +297,7 @@ font-weight:bold;
 padding-bottom: 7px;
 padding-top: 7px;
 }
+/*nav bar's button hover */
 .cbut:hover
 {
 	background-color: orange;
@@ -232,11 +309,14 @@ border-radius: 21px;
 font-weight:bold;
 padding-bottom: 7px;
 padding-top: 7px;
-}@media only screen and (max-width: 768px) {
+}
+/* Mobile View */
+@media only screen and (max-width: 768px) {
+	/* navigation contents */
   a.nav-link{
     display: none;
   }
-  
+  /* website logo */
   img.logo_img
 {
 display:block;
@@ -249,7 +329,7 @@ display:block;
 	width:auto !important;
 	font-size: 14px;
 	}
-	
+	/* navigation bar */
 	div.nav
 {
    background-color: black;
@@ -257,11 +337,12 @@ display:block;
    padding:20px;
    position:relative;
   }
-  
+  /* navigation bar button.. display none in mobile view */
   button.cbut
   {
   display:none;
   }
+  /* "row_1" class used for content1 body ,wrapping the content in mobile view */
  div.row_1
 {
 display:flex;
@@ -271,6 +352,7 @@ text-align:left;
 font-family: 'Raleway',sans-serif;
 margin:10px 20px 10px 20px;
 }
+/* "p1" class used for header alignment in content1- changes the alignments */
 p.p1{
 line-height: 30px !important;
 letter-spacing:.8px;
@@ -279,6 +361,7 @@ margin-left:10px;
 text-align:center;
 padding:0;
 }
+/* row_2" class used for Image alignments-wrapping */
 div.row_2{
 display:flex;
 -webkit-flex-wrap: wrap; 
@@ -286,7 +369,7 @@ flex-wrap:wrap;
 height:19%;
 overflow:hidden;
 }
-
+/* "Index-gallery" class used for Content 4 alignments */
  div#index-gallery{
  border:none;
  padding:10px;
@@ -298,25 +381,29 @@ overflow:hidden;
 margin-left:20px;
 text-align:center;
 }
-
+/*content 4anchor tag wrapping */
  a.news{
  font-size:15px;
  }
+ /* video img size*/
  img.vidimg
  {
  width:100%;
  height:20%
 }
+/* footer wrapping */
 div.mainfoot
 {
 display:flex;
 flex-wrap:wrap;
 }
+/* footer elements wrapping */
 div.footer
 {
 text-align:left;
 margin-left:0;
 }
+/*showing hamburger menu */
 .nav a.icon {
     float: right;
     display: block;
@@ -326,61 +413,17 @@ margin-left:0;
 	font-weight:bold;
 	font-size:25px;
   }
-  
-}
-body
-{
-margin:0;
-}
-.nav
-{
-    top:0;
-   padding:25px;
-   display:flex;
-   justify-content:flex-end;
-   background-color: rgba(0, 0, 0, 0.1);
-   position:fixed;
-   width:95%;
-   margin-left:0 !important;
-   font-family: 'Raleway',sans-serif;
-}
+  /* not display image in mobile view */
+  img.org_img
+  {
+	  display:none;
+  }
+  /* alternative img display only in mobile view */
+  img.alt
+  {
+	  display:block;
+	  width:100%;
+	  height:20%;
+  }
+}/* End of mobile view */
 
-.nav-link
-{
-
-text-decoration:none;
-color:white;
-margin: 0 20px;
-font-weight:bold;
-text-transform: uppercase;
-font-size: 13px;
-letter-spacing: 1px;
-}
-.row_1
-{
-display:flex;
-flex-basis:30%;
-flex-direction:row;
-justify-content:space-between;
-font-family: 'Raleway',sans-serif;
-margin:20px 50px 60px 50px;
-}
-.div
-{
-background-color:lightgray;
-padding:70px;
-}
-.logo_img {
-display:block;
-    position: absolute !important;
-    left: 0 !important;
-	top:0;
-	width: auto !important;
-    max-width: none;
-	height:95%;
-	margin:0 0 30px 40px;
-}
-.nav .icon
-{
-display:none;
-}
