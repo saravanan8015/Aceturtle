@@ -32,7 +32,64 @@
 <!--End of Navigation Bar -->
 
 <!-- Image Display -->
-             <img class="org_img" src="https://www.aceturtle.com/wp-content/uploads/2018/02/1_opti.jpg" width="1280px" height="720px"/>
+             <img class="org_img" src="https://www.aceturtle.com/wp-content/uploads/2018/02/1_opti.jpg" width="100%" height="680px"/>
+			 <img class="org_img" src="https://www.aceturtle.com/wp-content/uploads/2018/02/2_opti.jpg" width="100%" height="680px"/>
+			 <img class="org_img" src="https://www.aceturtle.com/wp-content/uploads/2018/02/3_opti.jpg" width="100%" height="680px"/>
+			 <img class="org_img" src="https://www.aceturtle.com/wp-content/uploads/2018/07/Albus-home-page-banner-min_updated.jpg" width="100%" height="680px"/>
+			 <!-- button for slideshow -->
+			 <div class="no">
+			 <i class="fa fa-angle-left" id="prev" onclick="plusSlides(-1)" style="color: rgb(0, 0, 0);"></i>
+			 <i class="fa fa-angle-right" id="next" onclick="plusSlides(1)" style="color: rgb(0, 0, 0);"></i>
+			 </div>
+          		      <div align="center" style="background-color:lightgray;">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+             <span class="dot" onclick="currentSlide(3)"></span> 
+			 <span class="dot" onclick="currentSlide(4)"></span> 
+			 </div>
+         
+			 <!-- include Javascript for slideshow-->
+			 <script>
+                 var slideIndex = 1;
+                 showSlides(slideIndex);
+				 var myIndex = 0;
+                 carousel();
+
+                 function plusSlides(n) {
+                 showSlides(slideIndex += n);
+                 }
+
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                 }
+
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("org_img");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+               }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+               }
+			   function carousel() {
+               var i;
+               var x = document.getElementsByClassName("org_img");
+               for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+               }
+               myIndex++;
+               if (myIndex > x.length) {myIndex = 1}    
+               x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000);    
+               }
+              </script>
 			 <!-- alternative image displaying when only mobile view -->
 			 <img class="alt" src="alternate.jpeg">
 			 
