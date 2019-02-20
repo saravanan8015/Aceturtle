@@ -1,3 +1,52 @@
+.org_img{
+	display:none;
+}
+/* next,Prev button in slideshow */
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  line-height:51px;
+  font-size:30px;
+  width:51px;
+  height:51px;
+  text-align:center !important;
+  vertical-align:baseline;
+  border-color:white !important;
+  top: 50%;
+  margin-top: -20px;
+  margin-left:50px;
+  margin-right:50px;
+  color: white !important;
+  font-weight:400;
+  transition: 0.3s ease;
+  border-radius: 57px;
+  border-style:solid;
+  
+}
+/* 3 dots blow on slideshow */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top:-50px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Position the "next button" to the right */
+#next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+  background-color:coral;
+}
 /* body alignment */
 body
 {
@@ -12,7 +61,7 @@ margin:0;
    justify-content:flex-end;
    background-color: rgba(0, 0, 0, 0.1);
    position:fixed;
-   width:95%;
+   width:100%;
    margin-left:0 !important;
    font-family: 'Raleway',sans-serif;
 }
@@ -296,6 +345,7 @@ border-radius: 21px;
 font-weight:bold;
 padding-bottom: 7px;
 padding-top: 7px;
+margin-right:30px;
 }
 /*nav bar's button hover */
 .cbut:hover
@@ -416,7 +466,7 @@ margin-left:0;
   /* not display image in mobile view */
   img.org_img
   {
-	  display:none;
+	  display:none !important;
   }
   /* alternative img display only in mobile view */
   img.alt
@@ -424,6 +474,20 @@ margin-left:0;
 	  display:block;
 	  width:100%;
 	  height:20%;
+  }
+  /* dot in slideshow */
+  span.dot
+  {
+	  display:none;
+  }
+  /*Next and prev button in slideshow .It will not dispaly */
+ #prev
+  {
+	  display:none;
+  }
+  #next
+  {
+	  display:none;
   }
 }/* End of mobile view */
 
