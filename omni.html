@@ -8,7 +8,6 @@
          <link rel="stylesheet" href="style.css"/>
 <!-- Css File for Icon -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          
 </head>
 
 <body>
@@ -20,7 +19,16 @@
           <img  class="logo_img" src="https://www.aceturtle.com/wp-content/uploads/2017/12/aceturtle-logo3.png">
 		  <!-- Navigation bar menus -->
 		               <!-- "nav-link" used for a tag" -->
-                       <a class="nav-link" href="About.html" >Company</a>
+                       <a href="#" class="nav-link" >Company</a>
+					   <!-- Company List out these Items -->
+					   <div class="complist">
+					   <a href="#"> About Us </a>
+					   <a href="#">Leadership</a>
+					   <a href="#"> Investors</a>
+					   <a href="#"> Culture</a>
+					   <a href="#"> Ace Turtle in News</a>
+					   <a href="#"> Careers</a>
+					   </div>
                        <a class="nav-link" href="platforms.html">Platform</a>
                        <a class="nav-link" href="Solution.html"> Solution</a>
                        <a class="nav-link" href="clietns.html">Our Clients</a>
@@ -87,7 +95,7 @@
                myIndex++;
                if (myIndex > x.length) {myIndex = 1}    
                x[myIndex-1].style.display = "block";  
-              setTimeout(carousel, 2000);    
+              setTimeout(carousel, 2500);    
                }
               </script>
 			 <!-- alternative image displaying when only mobile view -->
