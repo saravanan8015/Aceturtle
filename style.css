@@ -1,6 +1,10 @@
 .org_img{
 	display:none;
 }
+.complist
+{
+	display:none;
+}
 /* next,Prev button in slideshow */
 #prev, #next {
   cursor: pointer;
