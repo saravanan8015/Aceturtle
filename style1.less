@@ -1,0 +1,492 @@
+@ff:'Raleway',sans-serif;
+@bc:black;
+@fl:flex;
+@wid:50%;
+@bg: rgba(0, 0, 0, 0.1);
+/* general fonts for calling - not a class in html*/
+.gefont 
+{
+font-style: normal;
+font-weight: bold;
+text-transform: uppercase;
+}
+/* slideshow images,alternative images */
+.org_img,.alt
+{
+display:none;
+}
+#prev,#next,.foo2 /* buttons in slideshow and foot2 content  */
+{
+color:white !important;
+}
+/*Hide vertical scroll */
+html,body
+{
+    width: @wid*2;
+    height: @wid*2;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/* next,Prev button in slideshow */
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  line-height:51px;
+  font-size:30px;
+  width:51px;
+  height:51px;
+  text-align:center !important;
+  border-color:white !important;
+  top:@wid; /*50% */
+  margin: -20px 50px 0px 50px;
+  font-weight:400;
+  transition: 0.3s ease;
+  border-radius: 57px;
+  border-style:solid;
+ &:hover /* On hover, add a black background color with a little bit see-through */
+{
+background-color:coral;
+}
+}
+/* 3 dots blow on slideshow */
+.dot {
+  color:green !important;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top:-50px;
+  border-radius: @wid /* 50% */;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+&hover,active
+{
+   background-color: rgba(0, 0, 0, 0.1);
+}
+}
+/* Position the "next button" to the right */
+#next {
+  right: 0;
+}
+/* navigation bar */
+.nav
+{
+    top:0;
+   padding:25px;
+   display:@fl;
+   justify-content:flex-end;
+   background-color:@bg;
+   position:fixed;
+   width:@wid*2;
+   margin-left:0 !important;
+   font-family:@ff;
+ /*phone icon in nav bar */
+.icon
+{
+display:none;
+}
+}
+/* anchor tag in nav bar */
+.nav-link
+{
+text-decoration:none;
+color:white;
+margin: 0 20px;
+.gefont();
+font-size: 13px;
+letter-spacing: 1px;
+}
+/* content 1 alignments */
+.row_1
+{
+	padding:0px 30px 0px 30px;
+display:@fl;
+flex-basis:30%;
+flex-direction:row;
+font-size:20px;
+justify-content:space-between;
+font-family: @ff;
+margin:20px 50px 60px 50px;
+}
+/* content 1 */
+.div
+{
+	width:@wid*2;
+background-color:lightgray;
+padding:30px;
+}
+/* logo img fitness */
+.logo_img {
+display:block;
+    position: absolute !important;
+    left: 0 !important;
+	top:0;
+	width: auto !important;
+    max-width: none;
+	height:@wid+45;
+	margin:0 0 30px 40px;
+}
+/* Content 1 header alignment */
+.p1
+{
+	font-family: @ff;
+	color: @bc;
+font-size: 30px;
+line-height: 25px;
+.gefont();
+letter-spacing: .8px;
+
+	
+}
+/* content 2 image series */
+.ban1
+{
+	border:1px solid #f1f1f1;
+display:inline-block;
+padding:10px;
+box-shadow:none;
+}
+
+.item{
+  width:200px;
+  text-align:center;
+  display:flex;
+  background-color: transparent;
+  border: 1px solid transparent;
+  justify-content:space-between;
+}
+
+/* content 4 display box */
+#index-gallery{
+    padding:0px 80px 20px 80px !important;
+	text-align:left;
+	height:@wid;
+	display:@fl;
+	justify-content:space-between;
+	flex-basis:auto;
+   font-family: @ff;
+   flex-direction:row;
+  padding:30px;
+   font-size: 15px;
+   border:1px solid #f1f1f1;
+
+box-shadow:none;
+}
+/* anchor tag in content4 */
+.news
+{
+	text-decoration:none;
+	color:black;
+	font-size:15px;
+	font-family: @ff;
+	text-overflow: ellipsis;
+}
+ /* footer class for footer divison arrangements */
+.footer {
+	padding:20px;
+   width:@wid+50;
+   background-color: black;
+   color: white;
+   text-align: left;
+}
+/* button decoration for content 1 & 4*/
+.but1
+{
+	color: #000;
+background-color: transparent !important;
+margin-left: 0px;
+border: 2px solid black !important;
+border-radius: 21px;
+padding-bottom: 7px;
+padding-top: 7px;
+&:hover{
+	color:white;
+background-color: orangered !important;
+border: 2px solid orangered!important;
+
+}
+}
+	/*p2" class text arrangements in body content */
+.p2
+{
+	color: #5b5b5b;
+font-family: 'Open Sans',sans-serif;
+font-size: 15px;
+line-height: 26px;
+font-style: normal;
+font-weight: 400;
+}
+/* for content 1 body headLine */
+h5
+{
+	color: #515151;
+font-size: 15px;
+line-height: 25px;
+.gefont();
+}
+/* button in content 3 */
+.but2
+{
+height: 58px;
+line-height: 58px;
+font-size: 20px;
+padding: 0 22px;
+background-color: transparent !important;
+border: 2px solid #050404 !important;
+color: #090909 !important;
+width: 314px;
+text-align: center;
+border-radius: 38px;
+&:hover{
+background-color: orangered !important;
+border: 2px solid orangered !important;
+color: white !important;
+font-weight:bold;
+}
+}
+/* "p3" for alignments "p" tag contains images, a tag and one button in content 4 */
+.p3
+{
+flex-wrap:wrap;
+color: #5b5b5b;
+font-family: 'Open Sans',sans-serif;
+font-size: 15px;
+line-height: 26px;
+font-style: normal;
+font-weight: 400;
+padding: 26px 0 0;
+text-align:left;
+}
+/* row_2 class for display flex in content 2 */
+.row_2
+{
+display:@fl;
+flex-basis:30%;
+flex-direction:row;
+justify-content:space-between;
+font-family:@ff;
+margin:20px 90px 20px 90px;
+}
+/* after content3 displaying button background */
+.viddown
+{
+	background-color:lightgray;
+}
+/*  "mainfoot" class for whole footer alignments */
+.mainfoot
+{
+	text-align:left;
+	width:100%;
+	display:@fl;
+	justify-content:space-between;
+	flex-basis:auto;
+   font-family: 'Raleway',sans-serif;
+   flex-direction:row;
+   font-size: 20px;
+}
+/* "footer class for footer divison arrangements*/
+.footer
+{
+	color: #ff3d00;
+font-family:@ff;
+font-size:15px;
+padding:30px;
+/* "foo1" class for arrangements of unordered list */
+.foo1
+{
+	color: #5b5b5b!important;
+	font-size: 18px;
+/*just it changes the color */
+li:first-child
+{
+	color:white;
+}
+}
+/* foo2 class for changes color in footer list */
+.foo2
+{
+	color:white;
+}
+/* footer icon elements */
+.qode-icon-element {
+    color: #ff3d00;
+}
+/* displaying list without bullets */
+ul {
+  list-style-type: none;
+}
+}
+/*final line of webpage */
+.textwidget
+{
+	padding:10px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	font-size:12px;
+}	
+/* navigation bar contains one button */
+.cbut
+{
+	background-color:@bg;
+	width:12%;
+	color: white;
+border: 3px solid white !important;
+border-radius: 21px;
+  margin-top: -7px;
+font-weight:bold;
+padding-bottom: 7px;
+padding-top: 7px;
+margin-right:30px;
+&:hover 
+{
+	background-color: orange;
+	width:12%;
+	color: white;
+}
+}
+@media(max-width:768px)
+{
+#prev, #next, button.cbut, a.nav-link, span.dot, img.org_img
+{
+display:none !important;
+}
+  /*content 1 */
+    .div
+  {
+	  padding:20px 0px 10px 5px;
+
+  .p1
+  {
+	  line-height:20px !important;
+	  padding-left:0px !important;
+	  margin:0px;
+	  padding:10px;
+	  font-size:17px;
+	  font-family: @ff;
+  }
+	   #c2
+  {
+	  padding-left:0px !important;
+	  font-size:35px !important;
+  }
+  }
+  /* video image contain fit */
+   .vidimg
+  {
+	  object-fit:contain;
+	  background-color:lightgray;
+  }
+    /* website logo */
+.logo_img
+{
+    display:block;
+    left: 0 !important;
+	top:0;
+	margin:20px 0px 0px 20px;
+	height:50px !important;
+	width:auto !important;
+	font-size: 14px;
+	}
+	  img.logo_img
+{
+ .logo_img();
+	}
+	.flexConcept
+	{
+	display:flex;
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+	}
+	/* content1 heading */
+ div.nav
+  {
+   background-color:@bc;
+   height:50px;
+   padding:20px;
+   position:relative;
+   }
+   /* "row_1" class used for content1 body ,wrapping the content in mobile view */
+div.row_1
+{
+padding-top:0px;
+padding:0px !important;
+.flexConcept();
+text-align:left;
+font-family:@ff;
+font-size:15px;
+}
+/* row_2" class used for Image alignments-wrapping */
+div.row_2{
+padding:0px 30px 0px 20px;
+.flexConcept();
+width:@wid;
+}
+/* "Index-gallery" class used for Content 4 alignments */
+ div#index-gallery{
+ border:none;
+ padding:10px;
+.flexConcept();
+font-family: @ff;
+margin-left:20px;
+text-align:center;
+height:auto;
+}
+ img.alt,img.vidimg
+  {
+	  display:block;
+	  width:@wid*2;
+	  height:20% !important;
+  }
+  /* footer wrapping */
+div.mainfoot
+{
+.flexConcept();
+}
+/* footer elements wrapping */
+div.footer
+{
+text-align:left;
+margin-left:0;
+}
+/*showing hamburger menu */
+.nav a.icon {
+    float: right;
+    display: block;
+    color:white;
+    margin:15px 50px 0px 0px;
+	font-weight:bold;
+	font-size:25px;
+}
+}
+/*tablet View */
+@media (min-width: 768px) and (max-width: 1124px)
+{
+#prev, #next, button.cbut, a.nav-link, span.dot, img.org_img
+{
+display:none !important;
+}
+/* website logo */
+  img.logo_img
+  {
+  .logo_img();
+  }
+  div.nav
+  {
+  width:@wid*2;
+   background-color:@bc;
+   height:50px;
+   padding:20px;
+   position:relative;
+  }
+ /* video image contain fit */
+   .vidimg
+  {
+	  object-fit:contain;
+	  height:20%;
+  }
+  .p1
+  {
+  font-size:25px;
+  }
+  }
