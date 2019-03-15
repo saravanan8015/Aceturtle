@@ -1,15 +1,16 @@
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Header Tag -->
+
 <head>
 <!-- Title of page -->
 <title>OmniChannel eCommerce</title>
 
 <!-- Including External css file -->
-         <link rel="stylesheet" href="style.css"/>
+         <link rel="stylesheet" href="style1.css"/>
 <!-- Css File for Icon -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
 <!-- Navigation Bar -->
 <!-- "nav" Class used for Navigation Bar -->
@@ -20,15 +21,6 @@
 		  <!-- Navigation bar menus -->
 		               <!-- "nav-link" used for a tag" -->
                        <a href="#" class="nav-link" >Company</a>
-					   <!-- Company List out these Items -->
-					   <div class="complist">
-					   <a href="#"> About Us </a>
-					   <a href="#">Leadership</a>
-					   <a href="#"> Investors</a>
-					   <a href="#"> Culture</a>
-					   <a href="#"> Ace Turtle in News</a>
-					   <a href="#"> Careers</a>
-					   </div>
                        <a class="nav-link" href="platforms.html">Platform</a>
                        <a class="nav-link" href="Solution.html"> Solution</a>
                        <a class="nav-link" href="clietns.html">Our Clients</a>
@@ -49,7 +41,7 @@
 			 <i class="fa fa-angle-left" id="prev" onclick="plusSlides(-1)" style="color: rgb(0, 0, 0);"></i>
 			 <i class="fa fa-angle-right" id="next" onclick="plusSlides(1)" style="color: rgb(0, 0, 0);"></i>
 			 </div>
-          		      <div align="center" style="background-color:lightgray;">
+          		    <div align="center" style="background-color:lightgray;">
               <span class="dot" onclick="currentSlide(1)"></span> 
               <span class="dot" onclick="currentSlide(2)"></span> 
              <span class="dot" onclick="currentSlide(3)"></span> 
@@ -62,11 +54,11 @@
                  showSlides(slideIndex);
 				 var myIndex = 0;
                  carousel();
-
+                 <!-- Forward slide -->
                  function plusSlides(n) {
                  showSlides(slideIndex += n);
                  }
-
+                 <!-- Current slide -->
                 function currentSlide(n) {
                 showSlides(slideIndex = n);
                  }
@@ -86,27 +78,31 @@
               slides[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " active";
                }
-			   function carousel() {
-               var i;
-               var x = document.getElementsByClassName("org_img");
-               for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";  
-               }
-               myIndex++;
-               if (myIndex > x.length) {myIndex = 1}    
-               x[myIndex-1].style.display = "block";  
-              setTimeout(carousel, 2500);    
-               }
+			   <!-- Automatic slide transition -->
+			   var myIndex = 0;
+                carousel();
+
+                   function carousel() {
+                   var i;
+                   var x = document.getElementsByClassName("org_img");
+                  for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                   }
+                   myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 1500); }
+				  
               </script>
 			 <!-- alternative image displaying when only mobile view -->
-			 <img class="alt" src="alternate.jpeg">
+			 <img class="alt" src="alt.jpg">
 			 
 <!-- "div class used for Content1 -->			 
          <div class="div">
 		              <!-- "p1" class used for header alignment in content1 -->
                             <p class="p1" align="center"><b>SOLUTIONS THAT HELP YOU DELIVER A SEAMLESS<br><br>
                             OMNICHANNEL CUSTOMER EXPERIENCE</b></p>
-                            <br><br>
+                            
 						<!-- End of Content1 header -->
 
 <!-- "row_1" class used for content1 body -->						
@@ -157,16 +153,16 @@
 <!-- Next Content ! It contains Images -->
 
 <!-- "p1" class used for header in content2 -->
-             <p align="center" class="p1">
+             <p align="center" class="p1" id="c2">
                              <b> Our Clients</b></p><br>
 							 
 <!-- conent2 of body starts -->	
 <!--"row_2" class used for Image alignments -->						 
 <div class="row_2">
                                  <!--"ban1" class used for Image size alignments -->
-                                 <img  class="ban1" src="https://www.aceturtle.com/wp-content/uploads/2017/11/22-1.jpg" alt="fossil" >
-                                 <img class="ban1" src="https://www.aceturtle.com/wp-content/uploads/2018/03/puma_onhover.jpg" alt="puma">
-                                 <img class="ban1" src="https://www.aceturtle.com/wp-content/uploads/2017/11/36.jpg" alt="logo">
+                                 <img id="i1" class="ban1" src="https://www.aceturtle.com/wp-content/uploads/2017/11/22-1.jpg" alt="fossil" >
+                                 <img id="i2" class="ban1" src="https://www.aceturtle.com/wp-content/uploads/2018/03/puma_onhover.jpg" alt="puma">
+                                 <img id="i3" class="ban1" src="https://www.aceturtle.com/wp-content/uploads/2017/11/36.jpg" alt="logo">
                                  <img class="ban1" src="https://www.aceturtle.com/wp-content/uploads/2018/03/max_onhover.jpg" alt="logo">								 
 </div><!-- End of "row_2" class -->
 <!--Content2 Ends -->
