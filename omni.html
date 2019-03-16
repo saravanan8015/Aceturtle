@@ -7,7 +7,15 @@
 <title>OmniChannel eCommerce</title>
 
 <!-- Including External css file -->
-         <link rel="stylesheet" href="style1.css"/>
+         <link rel="stylesheet" href="less/view.css"/>
+         <link rel="stylesheet" href="less/navigation.css"/>
+		 <link rel="stylesheet" href="less/slides.css"/>
+		 <link rel="stylesheet" href="less/container.css"/>
+		 <link rel="stylesheet" href="less/imgseries.css"/>
+		 <link rel="stylesheet" href="less/videocontainer.css"/>
+		 <link rel="stylesheet" href="less/news.css"/>
+		 <link rel="stylesheet" href="less/footer.css"/>
+		 <link rel="stylesheet" href="less/copyrights.css"/>
 <!-- Css File for Icon -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -32,6 +40,7 @@
 <!--End of Navigation Bar -->
 
 <!-- Image Display -->
+<div class="slide">
              <img class="org_img" src="https://www.aceturtle.com/wp-content/uploads/2018/02/1_opti.jpg" width="100%" height="680px"/>
 			 <img class="org_img" src="https://www.aceturtle.com/wp-content/uploads/2018/02/2_opti.jpg" width="100%" height="680px"/>
 			 <img class="org_img" src="https://www.aceturtle.com/wp-content/uploads/2018/02/3_opti.jpg" width="100%" height="680px"/>
@@ -40,7 +49,7 @@
 			 <div class="no">
 			 <i class="fa fa-angle-left" id="prev" onclick="plusSlides(-1)" style="color: rgb(0, 0, 0);"></i>
 			 <i class="fa fa-angle-right" id="next" onclick="plusSlides(1)" style="color: rgb(0, 0, 0);"></i>
-			 </div>
+			 </div>			 
           		    <div align="center" style="background-color:lightgray;">
               <span class="dot" onclick="currentSlide(1)"></span> 
               <span class="dot" onclick="currentSlide(2)"></span> 
@@ -95,8 +104,8 @@
 				  
               </script>
 			 <!-- alternative image displaying when only mobile view -->
-			 <img class="alt" src="alt.jpg">
-			 
+			 <img class="alt" src="images/alt.jpg">
+</div>
 <!-- "div class used for Content1 -->			 
          <div class="div">
 		              <!-- "p1" class used for header alignment in content1 -->
@@ -172,6 +181,7 @@
 <!-- content3 -->
 <!-- Displaying Video Image -->
 <!--"vidimg" class used for image alignments -->
+<div class="video">
                    <img class="vidimg" src="https://www.aceturtle.com/wp-content/uploads/2018/02/video_new_opti.jpg" alt="video" width="100%" height="60%">
 				   
 <!-- Content3 Includes Button -->			
@@ -184,6 +194,7 @@
                                 <br><br>
 </div><!-- End of Viddown Class -->
 <!-- Content 3 ends -->
+</div>
 
 <br>
 
@@ -274,7 +285,7 @@ January 21,2019 </a><!-- end of a tag -->
                         <div class="footer">
                                              Resources
                                              <br>
-                                            <ul class="foo2"><!-- "foo2" class for arrangements of unordered list -->
+                                            <ul class="foo3"><!-- "foo2" class for arrangements of unordered list -->
                                             <li>Ace Turtle in News</li><br>
                                             <li>Blog</li><br>
                                             <li> Insights</li><br>
