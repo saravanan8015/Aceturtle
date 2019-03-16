@@ -1,0 +1,12 @@
+/*Copyrights*/
+.textwidget {
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 15px;
+}
+@media (max-width:768px) {
+  .textwidget {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,25 @@
+/* mobile view */
+@mobile:(max-width:768px);
+@flex:
+{
+  display: flex;
+  justify-content: space-between;
+}
+.shadow (@value)
+{
+  -moz-box-shadow:@value;
+  -webkit-box-shadow: @value;
+}
+.but1{
+  color: #000;
+  background-color: transparent !important;
+  margin-left: 0px;
+  border: 2px solid black !important;
+  border-radius: 21px;
+  padding: 7px 5px 7px 5px;
+&:hover  {
+  color: white;
+  background-color: orangered !important;
+  border: 2px solid orangered!important;
+}
+}

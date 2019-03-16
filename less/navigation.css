@@ -1,0 +1,94 @@
+/* navigation bar */
+/* Button */
+.flexConcept {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav {
+  padding: 25px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-left: 0 !important;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  /*call */
+  /*navigation items*/
+  /* logo image */
+  /*navigation bar contains one button */
+}
+@media (max-width: 768px) {
+  .nav {
+    /*mobile view of navigation bar */
+    background-color: black;
+    height: 50px;
+    padding: 20px;
+    position: relative;
+  }
+}
+.nav .icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav .icon {
+    float: right;
+    display: block;
+    color: white;
+    margin: 15px 50px 0px 0px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  /* items not displaying in mobile view */
+}
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+  }
+}
+.nav .logo_img {
+  display: block;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0;
+  width: auto !important;
+  max-width: none;
+  height: 95%;
+  margin: 0 0 30px 40px;
+}
+@media (max-width: 768px) {
+  .nav .logo_img {
+    margin: 20px 0px 0px 20px;
+    height: 50px !important;
+    font-size: 14px;
+  }
+}
+.nav .cbut {
+  width: 12%;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid white !important;
+  border-radius: 21px;
+  margin: -7px 30px 0px 0px;
+  font-weight: bold;
+  color: white;
+  padding: 7px 0px 7px 0px;
+}
+.nav .cbut:hover {
+  background-color: orange;
+}
+@media (max-width: 768px) {
+  .nav .cbut {
+    display: none;
+  }
+}

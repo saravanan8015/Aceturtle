@@ -1,0 +1,48 @@
+/*Video Container */
+@mobile:(max-width:768px);
+@videocontainer:.video;
+@hovercolor:orangered;
+/*video content */
+@{videocontainer}
+{
+/*image for video */
+.vidimg
+{
+@media@mobile
+{
+    object-fit: contain;
+    background-color: lightgray;
+}
+}
+/*background */
+.viddown
+{
+background-color:lightgray;
+}
+/* button */
+.but2
+{
+  height: 58px;
+  line-height: 58px;
+  font-size: 20px;
+  padding: 0 22px;
+  background-color: transparent !important;
+  border: 2px solid #050404 !important;
+  color: #090909 !important;
+  width: 314px;
+  text-align: center;
+  border-radius: 38px;
+  &:hover
+  {
+   background-color:@hovercolor !important;
+   border: 2px solid @hovercolor !important;
+   color: white !important;
+   font-weight: bold;
+  }
+}
+/*mobile view */
+@media@mobile
+{
+height:20%;
+}
+}

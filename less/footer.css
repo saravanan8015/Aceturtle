@@ -1,0 +1,51 @@
+/*footer contents */
+/* footer division */
+.mainfoot {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  /*footer in mobile view */
+  /* "footer class for footer divison arrangements*/
+}
+@media (max-width:768px) {
+  .mainfoot {
+    display: flex;
+    flex-wrap: wrap !important;
+    -webkit-flex-wrap: wrap;
+  }
+}
+.mainfoot .footer {
+  color: #ff3d00;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  padding: 30px;
+  /* Unordered list of footer */
+  /*icon elements twitter, fb */
+  /* mobile view footer contents */
+}
+.mainfoot .footer li {
+  color: white;
+}
+.mainfoot .footer ul {
+  list-style-type: none;
+}
+.mainfoot .footer .foo2 .foo3 {
+  color: white;
+}
+.mainfoot .footer .foo1 {
+  color: #5b5b5b !important;
+  font-size: 18px;
+}
+.mainfoot .footer .foo1 li:first-child {
+  color: white;
+}
+.mainfoot .footer .qode-icon-element {
+  color: #ff3d00;
+}
+@media (max-width:768px) {
+  .mainfoot .footer {
+    text-align: left;
+    margin-left: 20px;
+  }
+}

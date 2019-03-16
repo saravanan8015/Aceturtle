@@ -1,0 +1,33 @@
+/*Video Container */
+@media (max-width:768px) {
+  .video .vidimg {
+    object-fit: contain;
+    background-color: lightgray;
+  }
+}
+.video .viddown {
+  background-color: lightgray;
+}
+.video .but2 {
+  height: 58px;
+  line-height: 58px;
+  font-size: 20px;
+  padding: 0 22px;
+  background-color: transparent !important;
+  border: 2px solid #050404 !important;
+  color: #090909 !important;
+  width: 314px;
+  text-align: center;
+  border-radius: 38px;
+}
+.video .but2:hover {
+  background-color: orangered !important;
+  border: 2px solid orangered !important;
+  color: white !important;
+  font-weight: bold;
+}
+@media (max-width:768px) {
+  .video {
+    height: 20%;
+  }
+}

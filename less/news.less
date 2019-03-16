@@ -1,0 +1,59 @@
+/*content 4 */
+@import "mobile.less";
+@font:'Raleway', sans-serif;
+@news:#index-gallery;
+@fsize:15px;
+/* content 4 */
+@{news}
+ {
+  padding: 0px 80px 20px 80px !important;
+  text-align: left;
+  height: 50%;
+  font-family:@font; 
+  flex-direction: row !important;
+  padding: 30px;
+  font-size:@fsize;
+  border: 1px solid #f1f1f1;
+  .shadow(none);
+  @flex[];
+  @media@mobile
+  {
+    border: none;
+    padding: 10px;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-family:@font;
+    margin-left: 0px;
+    text-align: left;
+    height: auto;
+  }
+.news {
+  text-decoration: none;
+  padding-top: 5px;
+  color: black;
+  font-size:@fsize;
+  font-family:@font;
+  text-overflow: ellipsis;
+}
+/* header alignment */
+.p3 {
+  flex-wrap: wrap;
+  color: #5b5b5b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: @fsize;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 26px 0 0;
+  text-align: left;
+}
+}
+.p1
+{
+font-weight:bold;
+font-size:@fsize+15;
+@media@mobile{
+padding:70px 0px 10px 0px;
+}
+}

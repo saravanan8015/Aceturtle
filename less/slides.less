@@ -1,0 +1,75 @@
+/*slides */
+@mobile:(max-width:768px);
+@slide:.slide;
+@color1:white;
+/* general property none */
+.none{
+display:none;
+}
+/*class slide */
+@{slide}
+{
+.org_img
+{
+     .none();
+@media@mobile
+{
+&
+{
+      display:none !important;
+}
+}
+}
+/* alternative image for mobile view */
+.alt{
+    .none();
+@media@mobile
+{
+&
+{    display: block;
+    width: 100%;
+    height: 20% !important;
+}
+}
+}
+#prev
+{
+left: 0;
+}
+#next
+{
+right:0;
+}
+/* next,Prev button in slideshow */
+#prev,
+#next {
+   top:0;
+  cursor: pointer;
+  position: absolute;
+  line-height: 51px;
+  font-size: 30px;
+  width: 51px;
+  height: 51px;
+  color:@color1 !important; 
+  text-align: center !important;
+  border-color: @color1 !important;
+  top: 50%;
+  /*50% */
+  margin:-20px 50px 0px 50px;
+  font-weight: 400;
+  transition: 0.3s ease;
+  border-radius: 57px;
+  border-style: solid;
+&:hover {
+  background-color: coral;
+}
+@media@mobile
+{
+&
+{
+display:none;
+}
+
+}
+}
+}

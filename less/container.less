@@ -1,0 +1,70 @@
+/* Content 1 */
+@import "mobile.less";
+@container1:.div;
+@fs:15px;
+/*general */
+@gr:
+{
+ font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+};
+/*content 1 homepage */
+@{container1}
+{ 
+  width: 100%;
+  background-color: lightgray;
+  padding: 30px;
+  /* content 1 alignments */
+.row_1 {
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  margin: 20px 30px 60px 50px;
+  @media@mobile
+  {
+  display:flex;
+  flex-wrap:wrap;
+  margin:10px 10px 10px 0px; 
+  }
+}
+/*header content1 */
+  h5 
+  {
+  color: #515151;
+  font-size: 15px;
+  line-height: 25px;
+  @gr[];
+  }
+  
+.p1
+{
+  color: black;
+  font-size: @fs+15;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+  @gr[];
+  @media@mobile
+  {
+  & 
+  {
+    margin:10px 10px 10px -27px;
+    font-size:@fs+2;
+    @gr[];
+  }
+}
+}
+/*p2" class text arrangements in body content */
+.p2 {
+  color: #5b5b5b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: @fs;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
+}
+}
