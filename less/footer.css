@@ -3,16 +3,16 @@
 .mainfoot {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: black;
   color: white;
   /*footer in mobile view */
   /* "footer class for footer divison arrangements*/
 }
-@media (max-width:768px) {
+@media (max-width:600px), (max-width:992px) {
   .mainfoot {
     display: flex;
-    flex-wrap: wrap !important;
-    -webkit-flex-wrap: wrap;
+    flex-direction: column !important;
   }
 }
 .mainfoot .footer {
@@ -20,6 +20,8 @@
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   padding: 30px;
+  font-weight: bold;
+  line-height: 1.5p;
   /* Unordered list of footer */
   /*icon elements twitter, fb */
   /* mobile view footer contents */
@@ -28,10 +30,17 @@
   color: white;
 }
 .mainfoot .footer ul {
+  margin-left: -40px;
   list-style-type: none;
+}
+.mainfoot .footer .foo2 {
+  margin-left: -40px;
 }
 .mainfoot .footer .foo2 .foo3 {
   color: white;
+}
+.mainfoot .footer .foo3 {
+  margin-left: -40px;
 }
 .mainfoot .footer .foo1 {
   color: #5b5b5b !important;
@@ -43,9 +52,9 @@
 .mainfoot .footer .qode-icon-element {
   color: #ff3d00;
 }
-@media (max-width:768px) {
+@media (max-width:600px) {
   .mainfoot .footer {
     text-align: left;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 }

@@ -1,6 +1,9 @@
 /* Image series container */
 @container2:.row_2;
-@mobile:(max-width:768px);
+/* Responsive view */
+@mobile:(max-width:600px);
+@tablet:(max-width:992px);
+@lap:(max-width:1150px);
 .shadow (@value)
 {
   -moz-box-shadow:@value;
@@ -20,16 +23,23 @@
   display: inline-block;
   padding: 10px;
   .shadow(none);
+  margin:auto;
   }
   /*mobile view of image series */
-@media@mobile
+@media@mobile,@lap,@tablet
 {
 display:flex;
 -webkit-flex-wrap: wrap;
 flex-wrap:wrap;
+overflow:hidden;
 }
 }
 #c2
 {
 font-size:30px;
+padding-top:10px;
+font-size: 34px !important;
+font-family: 'Raleway',sans-serif;
+line-height: 30px !important;
+letter-spacing: .8px !important;
 }

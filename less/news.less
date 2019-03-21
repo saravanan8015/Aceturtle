@@ -1,59 +1,106 @@
 /*content 4 */
 @import "mobile.less";
+/* Responsive views */
+@mobile:(max-width:600px);
+@tablet:(max-width:992px);
+@lap:(max-width:1150px);
 @font:'Raleway', sans-serif;
 @news:#index-gallery;
+@c4:.content4;
+@imgalign:{ border: 1px solid #f1f1f1;
+   padding:10px;
+  .shadow(none);}
 @fsize:15px;
+.shadow (@value)
+{
+  -moz-box-shadow:@value;
+  -webkit-box-shadow: @value;
+}
+@{c4}
+{
+margin:10px 30px 10px 30px !important;
 /* content 4 */
 @{news}
  {
-  padding: 0px 80px 20px 80px !important;
-  text-align: left;
-  height: 50%;
-  font-family:@font; 
-  flex-direction: row !important;
+ 
+  padding: 0px 70px !important;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
   padding: 30px;
-  font-size:@fsize;
-  border: 1px solid #f1f1f1;
+  border: 3px solid #f1f1f1;
   .shadow(none);
-  @flex[];
-  @media@mobile
+   @flex[];
+.img1,.img2,.img3,.img4
+{
+@imgalign[];
+}
+  @media@mobile,@lap,@tablet
   {
+  padding: 10px 80px 20px 80px !important;
     border: none;
     padding: 10px;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+ flex-direction:column !important;
     font-family:@font;
     margin-left: 0px;
     text-align: left;
     height: auto;
   }
+@media@tablet,@lap{
+/*news images */
+ .img1,.img2,.img3,.img4
+  {
+  width:18%;
+  @imgalign[];
+  }
+}
+@media@mobile
+{
+.img1,.img2,.img3,.img4
+{
+@imgalign[];
+width:50%;
+}
+}
+/* contents alignments */
 .news {
   text-decoration: none;
   padding-top: 5px;
-  color: black;
-  font-size:@fsize;
+  color: #515151;
+  font-size:14.4px;
+  font-weight:700;
   font-family:@font;
+  line-height:2;
   text-overflow: ellipsis;
-}
-/* header alignment */
+  &:hover
+  {
+  color:orangered !important;
+  }
+  }
+/* news contents */
 .p3 {
   flex-wrap: wrap;
-  color: #5b5b5b;
+  color:#515151 !important;
   font-family: 'Open Sans', sans-serif;
-  font-size: @fsize;
-  line-height: 26px;
+  font-size: @fsize+4;
+  line-height: 20px;
   font-style: normal;
+  letter-spacing: 1px;
+text-transform: uppercase;
   font-weight: 400;
-  padding: 26px 0 0;
+  padding: 10px 0 0;
   text-align: left;
+}/*news Content ends */
 }
-}
-.p1
+/* Heading of news */
+.p4
 {
 font-weight:bold;
 font-size:@fsize+15;
-@media@mobile{
-padding:70px 0px 10px 0px;
-}
-}
+@media@mobile,@lap,@tablet{
+padding-top:0px;
+-moz-padding-top:120px !important;
+}/*p4  mobile view ends */
+}/*p4 ends */
+}/*content4 ends */

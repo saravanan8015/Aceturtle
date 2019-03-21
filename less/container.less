@@ -1,6 +1,11 @@
 /* Content 1 */
 @import "mobile.less";
 @container1:.div;
+/*mobile,tablet,lap */
+@mobile:(max-width:600px);
+@tablet:(max-width:992px);
+@lap:(max-width:1150px);
+/*font size */
 @fs:15px;
 /*general */
 @gr:
@@ -13,58 +18,119 @@
 /*content 1 homepage */
 @{container1}
 { 
+text-align:left;
   width: 100%;
-  background-color: lightgray;
-  padding: 30px;
+  background: 0 0;
+  background-color:lightgray;
+  padding: 20px 50px 10px 0px;
   /* content 1 alignments */
 .row_1 {
-  padding: 0px 30px 0px 30px;
+  padding: 0px 30px 0px 70px;
   display: flex;
-  flex-direction: row;
-  font-size: 16px;
+   justify-content: flex-end;
+  font-size: 20px;
   justify-content: space-between;
   font-family: 'Raleway', sans-serif;
-  margin: 20px 30px 60px 50px;
+  margin: 20px 30px 60px 30px;
   @media@mobile
   {
   display:flex;
   flex-wrap:wrap;
-  margin:10px 10px 10px 0px; 
+  margin-left:30px !important;
   }
-}
+  @media@tablet,@lap
+  {
+  display:flex;
+ flex-direction:column !important;
+ margin-left:0px !important;
+ flex-height:100%;
+  }
+  }
 /*header content1 */
+@media@mobile,@lap,@tablet
+{
+.qode_icon
+{
+font-size:30px !important;
+}
+}
+/* container1 sub headings */
   h5 
   {
-  color: #515151;
-  font-size: 15px;
-  line-height: 25px;
-  @gr[];
+  font-size: 30px;
+  margin-bottom:15px !important;
+  margin-top:0px !important;
   }
-  
+  /* header of container1 */
 .p1
 {
   color: black;
   font-size: @fs+15;
   line-height: 25px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
   @gr[];
   @media@mobile
   {
   & 
   {
-    margin:10px 10px 10px -27px;
-    font-size:@fs+2;
+    font-size:@fs+8;
     @gr[];
+	margin-top:-70px;
+	margin-left:20px;
+	margin-right:20px;
+  }
+  }
+  @media@mobile,@lap
+  {
+  font-size:@fs+8;
+    @gr[];
+	margin:10px;
   }
 }
-}
+
 /*p2" class text arrangements in body content */
 .p2 {
   color: #5b5b5b;
   font-family: 'Open Sans', sans-serif;
-  font-size: @fs;
-  line-height: 26px;
+  font-size:14px;
   font-style: normal;
   font-weight: 400;
+  @media@mobile
+  {
+  & .but1
+  {
+  margin-left:20px !important;
+  }
+  } 
+}
+/*container */
+.divid1
+{
+display:flex;
+flex-direction:row;
+color: #515151;
+line-height: 29px;
+  @gr[];
+font-size:14px !important;
+@media@mobile
+{
+padding-bottom:0px;
+}
+}
+@media@mobile,@lap,@tablet{
+.div_1,.div_2,.div_3
+{
+padding:10px;
+}
+@media@mobile
+{
+.sample
+{
+margin-left:37px !important;
+margin-top:-20px;
+margin-right:0px;
+line-height:1.5
+}
+}
 }
 }

@@ -1,12 +1,19 @@
 /*Video Container */
-@media (max-width:768px) {
+/*video content */
+.video {
+  /*image for video */
+  /*background */
+  background-color: lightgray;
+  padding-bottom: 10px;
+  /* button */
+  /*mobile view */
+}
+@media (max-width:600px), (max-width:992px), (max-width:1150px) {
   .video .vidimg {
-    object-fit: contain;
+    object-fit: cover;
+    height: 300px;
     background-color: lightgray;
   }
-}
-.video .viddown {
-  background-color: lightgray;
 }
 .video .but2 {
   height: 58px;
@@ -26,8 +33,17 @@
   color: white !important;
   font-weight: bold;
 }
-@media (max-width:768px) {
-  .video {
-    height: 20%;
+@media (max-width:600px), (max-width:992px), (max-width:1150px) {
+  .video .but2 {
+    width: 200px;
+    font-size: 15px;
   }
+}
+@media (max-width:600px), (max-width:1150px), (max-width:992px) {
+  .video {
+    height: auto;
+  }
+}
+.container2 {
+  margin-top: 30px !important;
 }

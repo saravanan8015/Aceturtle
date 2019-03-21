@@ -1,5 +1,8 @@
 /*Video Container */
-@mobile:(max-width:768px);
+/* Resonsive views */
+@mobile:(max-width:600px);
+@tablet:(max-width:992px);
+@lap:(max-width:1150px);
 @videocontainer:.video;
 @hovercolor:orangered;
 /*video content */
@@ -8,17 +11,16 @@
 /*image for video */
 .vidimg
 {
-@media@mobile
+@media@mobile,@tablet,@lap
 {
-    object-fit: contain;
+    object-fit: cover;
+     height:300px;
     background-color: lightgray;
 }
 }
 /*background */
-.viddown
-{
 background-color:lightgray;
-}
+padding-bottom:10px;
 /* button */
 .but2
 {
@@ -39,10 +41,19 @@ background-color:lightgray;
    color: white !important;
    font-weight: bold;
   }
+  @media@mobile,@tablet,@lap
+  {
+  width:200px;
+   font-size: 15px;
+  }
 }
 /*mobile view */
-@media@mobile
+@media@mobile,@lap,@tablet
 {
-height:20%;
+height:auto;
 }
+}
+.container2
+{
+margin-top:30px !important;
 }

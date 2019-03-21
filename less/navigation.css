@@ -1,59 +1,36 @@
+/* Responsive views */
 /* navigation bar */
-/* Button */
-.flexConcept {
+.nav {
+  top: 0;
+  padding: 25px;
   display: flex;
   justify-content: flex-end;
-}
-.nav {
-  padding: 25px;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: black;
+  position: relative;
   width: 100%;
   margin-left: 0 !important;
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: flex-end;
-  /*call */
-  /*navigation items*/
-  /* logo image */
-  /*navigation bar contains one button */
-}
-@media (max-width: 768px) {
-  .nav {
-    /*mobile view of navigation bar */
-    background-color: black;
-    height: 50px;
-    padding: 20px;
-    position: relative;
-  }
+  /*phone icon in nav bar */
+  /* anchor tag in nav bar */
+  /* logo img fitness */
+  /* navigation bar contains one button */
 }
 .nav .icon {
   display: none;
-}
-@media (max-width: 768px) {
-  .nav .icon {
-    float: right;
-    display: block;
-    color: white;
-    margin: 15px 50px 0px 0px;
-    font-weight: bold;
-    font-size: 25px;
-  }
 }
 .nav-link {
   text-decoration: none;
   color: white;
   margin: 0 20px;
-  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
   letter-spacing: 1px;
-  /* items not displaying in mobile view */
 }
-@media (max-width: 768px) {
+@media (max-width:600px), (max-width:992px), (max-width:1150px) {
   .nav-link {
-    display: none;
+    display: none !important;
   }
 }
 .nav .logo_img {
@@ -66,29 +43,53 @@
   height: 95%;
   margin: 0 0 30px 40px;
 }
-@media (max-width: 768px) {
+@media (max-width:600px), (max-width:992px) {
   .nav .logo_img {
+    display: block;
+    left: 0 !important;
+    top: 0;
     margin: 20px 0px 0px 20px;
     height: 50px !important;
+    width: auto !important;
     font-size: 14px;
   }
 }
 .nav .cbut {
-  width: 12%;
-  font-size: 12px;
   background-color: rgba(0, 0, 0, 0.1);
+  width: 12%;
+  color: white;
   border: 3px solid white !important;
   border-radius: 21px;
-  margin: -7px 30px 0px 0px;
+  margin-top: -7px;
   font-weight: bold;
-  color: white;
-  padding: 7px 0px 7px 0px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  margin-right: 30px;
 }
 .nav .cbut:hover {
   background-color: orange;
+  width: 12%;
+  color: white;
 }
-@media (max-width: 768px) {
+@media (max-width:600px), (max-width:992px), (max-width:1150px) {
   .nav .cbut {
-    display: none;
+    display: none !important;
+  }
+}
+@media (max-width:600px), (max-width:992px), (max-width:1150px) {
+  div.nav {
+    background-color: black;
+    height: 50px;
+    padding: 20px;
+    position: relative;
+  }
+  /*showing hamburger menu */
+  .nav a.icon {
+    float: right;
+    display: block;
+    color: white;
+    margin: 15px 50px 0px 0px;
+    font-weight: bold;
+    font-size: 25px;
   }
 }
