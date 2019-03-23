@@ -1,18 +1,26 @@
 /* Content 1 */
+/* general */
 /* mobile view */
 .but1 {
   color: #000;
   background-color: transparent !important;
-  margin-left: 0px;
   border: 2px solid black !important;
   border-radius: 21px;
   padding: 7px 5px 7px 5px;
+  margin: 0px 35px 0px 67px !important;
 }
 .but1:hover {
   color: white;
   background-color: orangered !important;
   border: 2px solid orangered!important;
 }
+@media (max-width:600px) {
+  .but1 {
+    margin-left: 20px !important;
+  }
+}
+/*mobile,tablet,lap */
+/*font size */
 /*general */
 /*content 1 homepage */
 .div {
@@ -21,9 +29,31 @@
   background: 0 0;
   background-color: lightgray;
   padding: 20px 50px 10px 0px;
+  /* icons */
   /* content 1 alignments */
-  /*header content1 */
+  /* header of container1 */
   /*p2" class text arrangements in body content */
+  /*container */
+}
+.div .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 50px;
+}
+@media (max-width:600px), (max-width:1150px), (max-width:992px) {
+  .div .fa {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 460px) {
+  .div .fa {
+    font-size: 40px !important;
+  }
+}
+@media (max-width:394px) {
+  .div .fa {
+    font-size: 30px;
+  }
 }
 .div .row_1 {
   padding: 0px 30px 0px 70px;
@@ -49,15 +79,12 @@
     flex-height: 100%;
   }
 }
-@media (max-width:600px), (max-width:1150px), (max-width:992px) {
-  .div .qode_icon {
-    font-size: 30px !important;
+@media (max-width: 460px) {
+  .div .row_1 {
+    display: flex;
+    flex-direction: column !important;
+    margin-left: -60px !important;
   }
-}
-.div h5 {
-  font-size: 30px;
-  margin-bottom: 15px !important;
-  margin-top: 0px !important;
 }
 .div .p1 {
   color: black;
@@ -91,16 +118,45 @@
     margin: 10px;
   }
 }
+@media (max-width:394px) {
+  .div .p1 {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1p;
+  }
+}
 .div .p2 {
   color: #5b5b5b;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 0px;
   font-style: normal;
   font-weight: 400;
+  padding: 0px 37px 0px 63px;
+}
+@media (max-width:600px) {
+  .div .p2 {
+    margin-left: -36px !important;
+  }
 }
 @media (max-width:600px) {
   .div .p2 .but1 {
     margin-left: 20px !important;
+  }
+}
+@media (max-width:394px) {
+  .div .p2 {
+    margin-left: -45px !important;
+  }
+}
+@media (max-width: 460px) {
+  .div .p2 {
+    font-size: 15px !important;
+    margin-left: -45px !important;
   }
 }
 .div .divid1 {
@@ -112,7 +168,25 @@
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 14px !important;
+}
+.div .divid1 h5 {
+  font-size: 15px !important;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+@media (max-width: 460px) {
+  .div .divid1 h5 {
+    font-size: 14px;
+  }
+}
+@media (max-width:394px) {
+  .div .divid1 h5 {
+    font-size: 13px !important;
+    text-transform: uppercase;
+    margin-top: 0px;
+    white-space: pre !important;
+  }
 }
 @media (max-width:600px) {
   .div .divid1 {

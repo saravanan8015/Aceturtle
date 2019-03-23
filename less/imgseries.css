@@ -18,12 +18,31 @@
   -webkit-box-shadow: none;
   margin: auto;
 }
+@media (max-width:600px) {
+  .row_2 .ban1 {
+    border: 1px solid gray;
+    padding: 0px !important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+}
+@media (max-width:394px) {
+  .row_2 .ban1 {
+    margin: auto !important;
+    width: 100%;
+  }
+}
 @media (max-width:600px), (max-width:1150px), (max-width:992px) {
   .row_2 {
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    overflow: hidden;
+  }
+}
+@media (max-width:394px) {
+  .row_2 {
+    display: flex;
+    flex-direction: column !important;
   }
 }
 #c2 {

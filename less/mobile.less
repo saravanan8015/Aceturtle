@@ -1,6 +1,6 @@
 /* general */
 /* mobile view */
-@mobile:(max-width:768px);
+@mobile:(max-width:600px);
 @flex:
 {
   display: flex;
@@ -14,13 +14,18 @@
 .but1{
   color: #000;
   background-color: transparent !important;
-  margin-left: 0px;
   border: 2px solid black !important;
   border-radius: 21px;
   padding: 7px 5px 7px 5px;
+  margin: 0px 35px 0px 67px !important;
 &:hover  {
   color: white;
   background-color: orangered !important;
   border: 2px solid orangered!important;
-}
+  }
+  @media@mobile
+  {
+  margin-left:20px !important;
+  }
+  
 }

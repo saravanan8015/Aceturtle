@@ -2,6 +2,7 @@
 @import "mobile.less";
 @container1:.div;
 /*mobile,tablet,lap */
+@small:(max-width:394px);
 @mobile:(max-width:600px);
 @tablet:(max-width:992px);
 @lap:(max-width:1150px);
@@ -23,6 +24,24 @@ text-align:left;
   background: 0 0;
   background-color:lightgray;
   padding: 20px 50px 10px 0px;
+    /* icons */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 50px;
+	@media@mobile,@lap,@tablet
+	{
+	font-size:50px !important;
+	}
+	@media(max-width:460px)
+	{
+	font-size:40px !important;
+	}
+	@media@small
+	{
+	font-size:30px;
+	}
+}
   /* content 1 alignments */
 .row_1 {
   padding: 0px 30px 0px 70px;
@@ -45,21 +64,12 @@ text-align:left;
  margin-left:0px !important;
  flex-height:100%;
   }
-  }
-/*header content1 */
-@media@mobile,@lap,@tablet
-{
-.qode_icon
-{
-font-size:30px !important;
-}
-}
-/* container1 sub headings */
-  h5 
+  @media(max-width:460px)
   {
-  font-size: 30px;
-  margin-bottom:15px !important;
-  margin-top:0px !important;
+    display:flex;
+ flex-direction:column !important;
+ margin-left:-60px !important;
+  }
   }
   /* header of container1 */
 .p1
@@ -86,22 +96,46 @@ font-size:30px !important;
     @gr[];
 	margin:10px;
   }
+  @media@small
+  {
+  font-size:15px;
+  @gr[];
+  line-height:1.1p;
+  }
+  
 }
+
 
 /*p2" class text arrangements in body content */
 .p2 {
   color: #5b5b5b;
   font-family: 'Open Sans', sans-serif;
-  font-size:14px;
+  font-size:15px;
+  line-height:1.5;
+  margin-top:0px;
   font-style: normal;
   font-weight: 400;
+  padding: 0px 37px 0px 63px;
+  @media@mobile
+  {
+  margin-left:-36px !important;
+  }
   @media@mobile
   {
   & .but1
   {
   margin-left:20px !important;
   }
-  } 
+  }
+  @media@small
+  {
+  margin-left:-45px !important;
+  }
+@media(max-width:460px)
+	{
+	font-size:15px !important;
+	margin-left:-45px !important;
+	}  
 }
 /*container */
 .divid1
@@ -111,7 +145,24 @@ flex-direction:row;
 color: #515151;
 line-height: 29px;
   @gr[];
-font-size:14px !important;
+h5
+{
+font-size:15px !important;
+letter-spacing: .6px;
+text-transform: uppercase;
+margin-top:0px;
+@media(max-width:460px)
+{
+font-size:14px;
+}
+@media@small
+{
+font-size:13px !important;
+text-transform: uppercase;
+margin-top:0px;
+white-space:pre !important;
+}
+}
 @media@mobile
 {
 padding-bottom:0px;

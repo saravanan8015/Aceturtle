@@ -4,6 +4,7 @@
 @mobile:(max-width:600px);
 @tablet:(max-width:992px);
 @lap:(max-width:1150px);
+@small:(max-width:394px);
 .shadow (@value)
 {
   -moz-box-shadow:@value;
@@ -24,6 +25,17 @@
   padding: 10px;
   .shadow(none);
   margin:auto;
+  @media@mobile
+  {
+  border:1px solid gray;
+  padding:0px !important;
+  .shadow(none);
+  }
+  @media@small
+  {
+  margin:auto !important;
+  width:100%;
+  }
   }
   /*mobile view of image series */
 @media@mobile,@lap,@tablet
@@ -31,8 +43,13 @@
 display:flex;
 -webkit-flex-wrap: wrap;
 flex-wrap:wrap;
-overflow:hidden;
 }
+@media@small
+{
+display:flex;
+flex-direction:column !important;
+}
+
 }
 #c2
 {

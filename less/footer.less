@@ -4,6 +4,7 @@
 @mobile:(max-width:600px);
 @tablet:(max-width:992px);
 @lap:(max-width:1150px);
+@small:(max-width:394px);
 /* footer division */
 @{footer}
 {
@@ -52,6 +53,11 @@ flex-direction:column !important;
   { 
     color:white;
   }   
+    @media@small
+  {
+  font-size:15px !important;
+  line-height:1.8;
+  }
 }
 /*icon elements twitter, fb */
 .qode-icon-element {
@@ -64,5 +70,6 @@ flex-direction:column !important;
     text-align: left;
     margin-left:0px;
   }
-  }
+}
+
   }

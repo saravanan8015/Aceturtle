@@ -1,4 +1,5 @@
 /*footer contents */
+/* Responsive Views */
 /* footer division */
 .mainfoot {
   display: flex;
@@ -7,7 +8,7 @@
   background-color: black;
   color: white;
   /*footer in mobile view */
-  /* "footer class for footer divison arrangements*/
+  /* footer class for footer divison arrangements*/
 }
 @media (max-width:600px), (max-width:992px) {
   .mainfoot {
@@ -48,6 +49,12 @@
 }
 .mainfoot .footer .foo1 li:first-child {
   color: white;
+}
+@media (max-width:394px) {
+  .mainfoot .footer .foo1 {
+    font-size: 15px !important;
+    line-height: 1.8;
+  }
 }
 .mainfoot .footer .qode-icon-element {
   color: #ff3d00;

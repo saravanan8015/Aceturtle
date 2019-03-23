@@ -1,4 +1,5 @@
 /*Video Container */
+/* Resonsive views */
 /*video content */
 .video {
   /*image for video */
@@ -13,6 +14,11 @@
     object-fit: cover;
     height: 300px;
     background-color: lightgray;
+  }
+}
+@media (max-width:394px) {
+  .video .vidimg {
+    height: 50% !important;
   }
 }
 .video .but2 {
